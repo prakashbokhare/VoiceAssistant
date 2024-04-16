@@ -4,8 +4,9 @@ const content = document.querySelector('.content');
 function speak(sentence) {
     const text_speak = new SpeechSynthesisUtterance(sentence);
 
-    text_speak.rate = 1;
-    text_speak.pitch = 1;
+      text_speak.voice = window.speechSynthesis.getVoices()[7]
+    text_speak.pitch = 0.9;
+    text_speak.rate = 1.2;
 
     window.speechSynthesis.speak(text_speak);
 }
@@ -67,7 +68,7 @@ function speakThis(message) {
     }
 
     else if(message.includes('name')) {
-        const finalText = "My name is Inertia";
+        const finalText = "My name is Rani";
         speech.text = finalText;
     }
 
