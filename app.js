@@ -94,6 +94,11 @@ function speakThis(message) {
         const finalText = "This is what i found on internet regarding " + message;
         speech.text = finalText;
     }
+    else if(message.includes('news') || message.includes('samachar') || message.includes('lallantop')) {
+        window.open(`https://www.youtube.com/watch?v=nixF-jwdv0w` "_blank");
+        const finalText = "This is what i found on youtube regarding " + message;
+        speech.text = finalText;
+    }
 
     else if(message.includes('wikipedia')) {
         window.open(`https://en.wikipedia.org/wiki/${message.replace("wikipedia", "")}`, "_blank");
