@@ -72,6 +72,10 @@ function speakThis(message) {
         const finalText = "My name is Rani";
         speech.text = finalText;
     }
+           else if(message.includes('i love you')) {
+        const finalText = "i Love you 2 prakash baby";
+        speech.text = finalText;
+    }
 
     else if(message.includes('open google')) {
         window.open("https://google.com", "_blank");
