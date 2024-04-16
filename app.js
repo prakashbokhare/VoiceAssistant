@@ -76,7 +76,10 @@ function speakThis(message) {
         const finalText = "i Love you 2 prakash baby";
         speech.text = finalText;
     }
-
+else if(message.includes('who is ayushi')) {
+        const finalText = "your favorite emeny";
+        speech.text = finalText;
+    }
     else if(message.includes('open google')) {
         window.open("https://google.com", "_blank");
         const finalText = "Opening Google";
