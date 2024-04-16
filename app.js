@@ -10,6 +10,7 @@ function speak(sentence) {
 
     window.speechSynthesis.speak(text_speak);
 }
+speak();
 
 function wishMe() {
     var day = new Date();
