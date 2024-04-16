@@ -95,7 +95,7 @@ function speakThis(message) {
         speech.text = finalText;
     }
     else if(message.includes('news') || message.includes('samachar') || message.includes('lallantop')) {
-        window.open(`https://www.youtube.com/` "_blank");
+        window.open(`https://www.hindustantimes.com/india-news/latest-india-news-today-live-updates-april-16-2024-101713231004520.html` "_blank");
         const finalText = "This is what i found on youtube regarding " + message;
         speech.text = finalText;
     }
