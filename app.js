@@ -34,7 +34,7 @@ function wishMe() {
 }
 
 window.addEventListener('load', ()=>{
-    speak("Activating Rani");
+    speak("Activating Ruhi");
     speak("Going online");
     wishMe();
 })
@@ -72,7 +72,7 @@ function speakThis(message) {
         const finalText = "My name is Rani";
         speech.text = finalText;
     }
-           else if(message.includes('i love you')) {
+    else if(message.includes('i love you')) {
         const finalText = "i Love you 2 prakash baby";
         speech.text = finalText;
     }
@@ -93,8 +93,6 @@ function speakThis(message) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what i found on internet regarding " + message;
         speech.text = finalText;
-    }
-  
     }
 
     else if(message.includes('wikipedia')) {
