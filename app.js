@@ -77,7 +77,7 @@ function speakThis(message) {
         speech.text = finalText;
     }
 else if(message.includes('who is ayushi')) {
-        const finalText = "your favorite emeny";
+        const finalText = "dushman hai wo dushman";
         speech.text = finalText;
     }
     else if(message.includes('open google')) {
