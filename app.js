@@ -55,7 +55,7 @@ btn.addEventListener('click', ()=>{
 
 function speakThis(message) {
     const speech = new SpeechSynthesisUtterance();
-
+    speech.voice = window.speechSynthesis.getVoices()[7]
     speech.text = "I did not understand what you said please try again";
 
     if(message.includes('hey') || message.includes('hello')) {
