@@ -125,6 +125,11 @@ else if(message.includes('who is ayushi')) {
         const finalText = "Opening Calculator";
         speech.text = finalText;
     }
+else if(message.includes('VS code')) {
+        window.open('Visual Studio Code:///')
+        const finalText = "Opening Calculator";
+        speech.text = finalText;
+    }
 
     else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
