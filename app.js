@@ -125,9 +125,9 @@ else if(message.includes('who is ayushi')) {
         const finalText = "Opening Calculator";
         speech.text = finalText;
     }
-else if(message.includes('VS code')) {
+else if(message.includes('V S code')) {
         window.open('Visual Studio Code:///')
-        const finalText = "Opening Calculator";
+        const finalText = "Opening Visual Studio Code";
         speech.text = finalText;
     }
 
