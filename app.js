@@ -34,7 +34,7 @@ function wishMe() {
 }
 
 window.addEventListener('load', ()=>{
-    speak("Activating Ruhi");
+    speak("Activating Rani");
     speak("Going online");
     wishMe();
 })
@@ -68,7 +68,7 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
-    else if(message.includes('name')) {
+    else if(message.includes('your name')) {
         const finalText = "My name is Rani";
         speech.text = finalText;
     }
