@@ -76,6 +76,10 @@ function speakThis(message) {
         const finalText = "i Love you 2 prakash baby";
         speech.text = finalText;
     }
+    else if(message.includes(' prime minister of india')) {
+        const finalText = " Narendra modi";
+        speech.text = finalText;
+    }
 else if(message.includes('who is ayushi')) {
         const finalText = "dushman hai wo dushman";
         speech.text = finalText;
