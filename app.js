@@ -2,13 +2,12 @@ const btn = document.querySelector('.talk');
 const content = document.querySelector('.content');
 
 function speak(sentence) {
-    const text_speak = new SpeechSynthesisUtterance(sentence);
-
-    text_speak.rate = 1;
-    text_speak.pitch = 1;
-
+text_speak.voice = window.speechSynthesis.getVoices()[7];
+    text_speak.pitch = 0.9;
+    text_speak.rate = 1.2;
     window.speechSynthesis.speak(text_speak);
 }
+
 
 function wishMe() {
     var day = new Date();
@@ -32,7 +31,7 @@ function wishMe() {
 }
 
 window.addEventListener('load', ()=>{
-    speak("Activating Inertia");
+    speak("Activating rani");
     speak("Going online");
     wishMe();
 })
@@ -52,7 +51,7 @@ btn.addEventListener('click', ()=>{
 })
 
 function speakThis(message) {
-    const speech = new SpeechSynthesisUtterance();
+    const speech = new SpeechSynthesisUtterance(7);
 
     speech.text = "I did not understand what you said please try again";
 
