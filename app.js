@@ -64,13 +64,13 @@ function speakThis(message) {
         const finalText = "I am fine boss tell me how can i help you";
         speech.text = finalText;
     }
-         else if(message.includes(' your name')) {
-        const finalText = "I am Rani";
+         else if(message.includes(' how are you')) {
+        const finalText = "I am voice assistant rani";
         speech.text = finalText;
     }
 
     else if(message.includes('name')) {
-        const finalText = "My name is Inertia";
+        const finalText = "My name is rani";
         speech.text = finalText;
     }
 
