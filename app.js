@@ -73,7 +73,7 @@ function speakThis(message) {
         const finalText = "I am fine boss tell me how can i help you";
         speech.text = finalText;
     }
-         else if(message.includes('who are you')) {
+         else if(message.includes('who are you')|| message.includes('hu r u'))  {
         const finalText = "I am voice assistant rani";
         speech.text = finalText;
     }
