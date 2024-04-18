@@ -63,7 +63,12 @@ function speakThis(message) {
         const finalText = "Hello Boss";
         speech.text = finalText;
     }
-
+     else if(message.includes('who made you') || message.includes('who create you')) {
+        const finalText = "Hello Boss";
+        speech.text = finalText;
+    }
+         
+         
     else if(message.includes('how are you')) {
         const finalText = "I am fine boss tell me how can i help you";
         speech.text = finalText;
@@ -72,7 +77,7 @@ function speakThis(message) {
         const finalText = "I am voice assistant rani";
         speech.text = finalText;
     }
-
+     
     else if(message.includes('your name')) {
         const finalText = "My name is rani";
         speech.text = finalText;
@@ -90,6 +95,7 @@ else if(message.includes('who is ayushi')) {
         const finalText = "Opening Google";
         speech.text = finalText;
     }
+   
 
     else if(message.includes('open instagram')) {
         window.open("https://instagram.com", "_blank");
