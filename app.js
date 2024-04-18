@@ -62,7 +62,10 @@ function speakThis(message) {
         const finalText = "Hello Boss";
         speech.text = finalText;
     }
-
+ else if(message.includes('who made you') || message.includes('who create you')) {
+        const finalText = "prakash  create me";
+        speech.text = finalText;
+    }
     else if(message.includes('how are you')) {
         const finalText = "I am fine boss tell me how can i help you";
         speech.text = finalText;
@@ -77,6 +80,7 @@ function speakThis(message) {
         const finalText = "My name is Rani";
         speech.text = finalText;
     }
+     
     else if(message.includes('i love you')) {
         const finalText = "i Love you 2 prakash baby";
         speech.text = finalText;
