@@ -51,7 +51,7 @@ btn.addEventListener('click', ()=>{
 })
 
 function speakThis(message) {
-    const speech = new SpeechSynthesisUtterance(7);
+    const speech = new SpeechSynthesisUtterance();
 
     speech.text = "I did not understand what you said please try again";
 
@@ -71,6 +71,10 @@ function speakThis(message) {
 
     else if(message.includes('name')) {
         const finalText = "My name is rani";
+        speech.text = finalText;
+    }
+    else if(message.includes(' prime minister of india')) {
+        const finalText = " narendra modi";
         speech.text = finalText;
     }
 
