@@ -139,8 +139,8 @@ function GeminiResponse(msg) {
         //   console.log(data["candidates"][0]["content"]["parts"][0].text);
         output = data["candidates"][0]["content"]["parts"][0].text;
         console.log(output)      
-        // speak(output)
-        Bulwalo(output)
+        speak(output)
+        // Bulwalo(output)
         
         
         //genralChatArr.bot.push(output); //jab gemini response dega tab localhost me save karna hai
