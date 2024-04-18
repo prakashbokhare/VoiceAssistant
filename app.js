@@ -64,7 +64,7 @@ function speakThis(message) {
         speech.text = finalText;
     }
      else if(message.includes('who made you') || message.includes('who create you')) {
-        const finalText = "Hello Boss";
+        const finalText = "prakash create me";
         speech.text = finalText;
     }
          
