@@ -8,7 +8,7 @@ text_speak.voice = window.speechSynthesis.getVoices()[7];
     window.speechSynthesis.speak(text_speak);
 }
 
-
+speak();
 function wishMe() {
     var day = new Date();
     var hr = day.getHours();
@@ -49,10 +49,10 @@ recognition.onresult = (event) => {
 btn.addEventListener('click', ()=>{
     recognition.start();
 })
-
-function speakThis(message) {
-    const speech = new SpeechSynthesisUtterance();
+  const speech = new SpeechSynthesisUtterance();
     speech.voice = window.speechSynthesis.getVoices()[7];
+function speakThis(message) {
+  
     speech.volume = 1;
     speech.pitch = 1;
     speech.rate = 1;
@@ -139,10 +139,9 @@ else if(message.includes('who is ayushi')) {
         speech.text = finalText;
     }
 
-    speech.volume = 1;
-    speech.pitch = 1;
-    speech.rate = 1;
-
+  
     window.speechSynthesis.speak(speech);
+
+    
 }
 
