@@ -8,7 +8,7 @@ text_speak.voice = window.speechSynthesis.getVoices()[7];
     window.speechSynthesis.speak(text_speak);
 }
 
-speak();
+
 function wishMe() {
     var day = new Date();
     var hr = day.getHours();
