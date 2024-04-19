@@ -31,7 +31,7 @@ function wishMe() {
 }
 
 window.addEventListener('load', ()=>{
-    speak("Activating rani");
+    speak("Activating devid");
     speak("Going online");
     wishMe();
 })
@@ -74,12 +74,12 @@ function speakThis(message) {
         speech.text = finalText;
     }
          else if(message.includes('who are you')|| message.includes('hu r u'))  {
-        const finalText = "I am voice assistant rani";
+        const finalText = "I am voice assistant devid";
         speech.text = finalText;
     }
      
     else if(message.includes('your name')) {
-        const finalText = "My name is rani";
+        const finalText = "My name is devid";
         speech.text = finalText;
     }
     else if(message.includes('prime minister of india')) {
