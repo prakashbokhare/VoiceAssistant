@@ -1,7 +1,7 @@
 const btn = document.querySelector('.talk');
 const content = document.querySelector('.content');
-let text_speak;
 function speak(sentence) {
+    const text_speak = new SpeechSynthesisUtterance(sentence);
 text_speak.voice = window.speechSynthesis.getVoices()[7];
     text_speak.pitch = 0.9;
     text_speak.rate = 1.2;
