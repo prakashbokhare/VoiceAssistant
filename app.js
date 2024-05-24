@@ -74,10 +74,30 @@ function speakThis(message) {
         const finalText = "Narendra modi";
         speech.text = finalText;
     }
-    else if(message.includes('name')) {
+    else if(message.includes('your name')) {
         const finalText = "My name is Devid";
         speech.text = finalText;
     }
+        else if(message.includes('what is HTML')) {
+        const finalText = "HTML stands for HyperText Markup Language and is the language of the internet";
+        speech.text = finalText;
+    }
+         else if(message.includes('Who is the father of Computer science ')) {
+        const finalText = "Charles Babbage";
+        speech.text = finalText;
+    }   
+       
+         else if(message.includes('Who developed the first electronic computer')) {
+        const finalText = "J.V. Atansoff";
+        speech.text = finalText;
+    }
+      
+         else if(message.includes('What converts an entire program into machine language')) {
+        const finalText = "Compiler";
+        speech.text = finalText;
+    }
+
+
 
     else if(message.includes('open google')) {
         window.open("https://google.com", "_blank");
