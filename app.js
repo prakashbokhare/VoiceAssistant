@@ -1,13 +1,14 @@
 const btn = document.querySelector('.talk');
 const content = document.querySelector('.content');
+
 function speak(sentence) {
     const text_speak = new SpeechSynthesisUtterance(sentence);
-text_speak.voice = window.speechSynthesis.getVoices()[7];
-    text_speak.pitch = 0.9;
-    text_speak.rate = 1.2;
+
+    text_speak.rate = 1;
+    text_speak.pitch = 1;
+
     window.speechSynthesis.speak(text_speak);
 }
-
 
 function wishMe() {
     var day = new Date();
@@ -31,7 +32,7 @@ function wishMe() {
 }
 
 window.addEventListener('load', ()=>{
-    speak("Activating devid");
+    speak("Activating Inertia");
     speak("Going online");
     wishMe();
 })
@@ -49,13 +50,9 @@ recognition.onresult = (event) => {
 btn.addEventListener('click', ()=>{
     recognition.start();
 })
-  const speech = new SpeechSynthesisUtterance();
-    speech.voice = window.speechSynthesis.getVoices()[7];
+
 function speakThis(message) {
-  
-    speech.volume = 1;
-    speech.pitch = 1;
-    speech.rate = 1;
+    const speech = new SpeechSynthesisUtterance();
 
     speech.text = "I did not understand what you said please try again";
 
@@ -63,39 +60,22 @@ function speakThis(message) {
         const finalText = "Hello Boss";
         speech.text = finalText;
     }
-     else if(message.includes('who made you') || message.includes('who create you')) {
-        const finalText = "prakash create me";
-        speech.text = finalText;
-    }
-         
-         
+
     else if(message.includes('how are you')) {
         const finalText = "I am fine boss tell me how can i help you";
         speech.text = finalText;
     }
-         else if(message.includes('who are you')|| message.includes('hu r u'))  {
-        const finalText = "I am voice assistant devid";
+
+    else if(message.includes('name')) {
+        const finalText = "My name is Inertia";
         speech.text = finalText;
     }
-     
-    else if(message.includes('your name')) {
-        const finalText = "My name is devid";
-        speech.text = finalText;
-    }
-    else if(message.includes('prime minister of india')) {
-        const finalText = " narendra modi";
-        speech.text = finalText;
-    }
-else if(message.includes('who is ayushi')) {
-        const finalText = "dushman hai wo dushman";
-        speech.text = finalText;
-    }
+
     else if(message.includes('open google')) {
         window.open("https://google.com", "_blank");
         const finalText = "Opening Google";
         speech.text = finalText;
     }
-   
 
     else if(message.includes('open instagram')) {
         window.open("https://instagram.com", "_blank");
@@ -139,9 +119,9 @@ else if(message.includes('who is ayushi')) {
         speech.text = finalText;
     }
 
-  
+    speech.volume = 1;
+    speech.pitch = 1;
+    speech.rate = 1;
+
     window.speechSynthesis.speak(speech);
-
-    
 }
-
