@@ -32,7 +32,7 @@ function wishMe() {
 }
 
 window.addEventListener('load', ()=>{
-    speak("Activating Inertia");
+    speak("Activating Devid");
     speak("Going online");
     wishMe();
 })
@@ -65,9 +65,17 @@ function speakThis(message) {
         const finalText = "I am fine boss tell me how can i help you";
         speech.text = finalText;
     }
-
+         else if(message.includes('who is ayushi')) {
+        const finalText = "dushman hai wo meri";
+        speech.text = finalText;
+    }
+      
+         else if(message.includes('prime minister of india')) {
+        const finalText = "Narendra modi";
+        speech.text = finalText;
+    }
     else if(message.includes('name')) {
-        const finalText = "My name is Inertia";
+        const finalText = "My name is Devid";
         speech.text = finalText;
     }
 
