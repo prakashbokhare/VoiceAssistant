@@ -69,10 +69,7 @@ function speakThis(message) {
         const finalText = "I am fine boss tell me how can i help you";
         speech.text = finalText;
     } 
-         else if(message.includes('how are you')) {
-        const finalText = "I am fine boss tell me how can i help you";
-        speech.text = finalText;
-    }
+        
          else if(message.includes('who is ayushi')) {
         const finalText = "dushman hai wo meri";
         speech.text = finalText;
