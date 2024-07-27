@@ -86,6 +86,14 @@ function speakThis(message) {
         const finalText = "My name is Devid";
         speech.text = finalText;
     }
+         else if(message.includes('what is the java developer name ')) {
+        const finalText = "java was originally developed by James Gosling at sun microsystems";
+        speech.text = finalText;
+    }
+              else if(message.includes('who is the developer of javascript')) {
+        const finalText = "javascript was invented by Brendan Eich in 1995";
+        speech.text = finalText;
+    }
         else if(message.includes('what is HTML')) {
         const finalText = "HTML stands for HyperText Markup Language and is the language of the internet";
         speech.text = finalText;
