@@ -79,32 +79,56 @@ function speakThis(message) {
         const finalText = quote;
            speech.text = finalText;
     } 
+               else if(message.includes('tell me a joke')) {
+        const jokes = [
+            `Why don't scientists trust atoms? Because they make up everything!`,
+            `Why did the scarecrow win an award? Because he was outstanding in his field!`,
+            `Why don’t skeletons fight each other? They don’t have the guts`
+        ];
+        const joke = jokes[Math.floor(Math.random() * jokes.length)];
+        speak(joke);
+    }
          else if(message.includes('Ayushi')) {
         const finalText = "dushman hai wo meri";
         speech.text = finalText;
     }
       
-         else if(message.includes('prime minister of india')) {
-        const finalText = "Narendra modi";
-        speech.text = finalText;
+        else if(message.includes('play') && message.includes('music')) {
+        window.open(`https://youtube.com/clip/Ugkxl_1mEjWsoM8CqMvmuEgDDt3BxhEjA_Gq?feature=shared`);
+        const finalText = "Playing " + message.replace("play ", "") + " on YouTube.";
+        speak(finalText);
+    }
+    else if(message.includes('news')) {
+        window.open(`https://news.google.com`, "_blank");
+        speak("Here are the latest news updates.");
+    }
+    else if(message.includes('weather')) {
+        window.open(`https://www.google.com/search?q=weather+in+${message.replace("weather in ", "")}`, "_blank");
+        const finalText = "This is what I found about the weather in " + message.replace("weather in ", "");
+        speak(finalText);
+    }
+    else if(message.includes('prime minister')) {
+        // window.open(`https://www.google.com/search?q=weather+in+${message.replace("weather in ", "")}`, "_blank");
+        const finalText = "Our Prime Minister Is Mister Narendra Modi"
+        speak(finalText);
     }
     else if(message.includes('your name')) {
         const finalText = "My name is Devid";
         speech.text = finalText;
     }
-         else if(message.includes('what is the java developer name ')) {
+         else if(message.includes('Java')) {
         const finalText = "java was originally developed by James Gosling at sun microsystems";
         speech.text = finalText;
     }
-              else if(message.includes('who is the developer of javascript')) {
+              else if(message.includes('Javascript')) {
         const finalText = "javascript was invented by Brendan Eich in 1995";
         speech.text = finalText;
     }
-        else if(message.includes('what is HTML')) {
+        else if(message.includes('HTML')) {
         const finalText = "HTML stands for HyperText Markup Language and is the language of the internet";
         speech.text = finalText;
     }
-         else if(message.includes('Who is the father of Computer science ')) {
+         else if(message.includes('computer science')) {
         const finalText = "Charles Babbage";
         speech.text = finalText;
     }   
@@ -175,4 +199,4 @@ function speakThis(message) {
 
     window.speechSynthesis.speak(speech);
 }
-console.log("updated test 1")
+console.log("updated test 2")
