@@ -69,8 +69,17 @@ function speakThis(message) {
         const finalText = "I am fine boss tell me how can i help you";
         speech.text = finalText;
     } 
-        
-         else if(message.includes('who is ayushi')) {
+       else if(message.includes('Motivation') || message.includes('Quote')) {
+        const quotes = [
+            `The only way to do great work is to love what you do. - Steve Jobs`,
+            `The best time to plant a tree was 20 years ago. The second best time is now. - Chinese Proverb`,
+            `Your time is limited, don’t waste it living someone else’s life. - Steve Jobs`
+        ];
+        const quote = quotes[Math.floor(Math.random() * quotes.length)];
+        const finalText = quote;
+           speech.text = finalText;
+    } 
+         else if(message.includes('Ayushi')) {
         const finalText = "dushman hai wo meri";
         speech.text = finalText;
     }
