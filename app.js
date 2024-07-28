@@ -53,23 +53,21 @@ btn.addEventListener('click', ()=>{
 
 function speakThis(message) {
     const speech = new SpeechSynthesisUtterance();
-
-    speech.text = "I did not understand what you said please try again";
+    speech.text = "";
 
     if(message.includes('hey') || message.includes('hello')) {
         const finalText = "Hello Boss";
         speech.text = finalText;
     }
-
     else if(message.includes('how are you')) {
         const finalText = "I am fine boss tell me how can i help you";
         speech.text = finalText;
     }
-         else if(message.includes('how r u')) {
+    else if(message.includes('how r u')) {
         const finalText = "I am fine boss tell me how can i help you";
         speech.text = finalText;
     } 
-       else if(message.includes('Motivation') ||  message.includes('motivation')) {
+    else if(message.includes('Motivation') ||  message.includes('motivation')) {
         const quotes = [
             `The only way to do great work is to love what you do. - Steve Jobs`,
             `The best time to plant a tree was 20 years ago. The second best time is now. - Chinese Proverb`,
@@ -79,7 +77,7 @@ function speakThis(message) {
         const finalText = quote;
            speech.text = finalText;
     } 
-               else if(message.includes('tell me a joke')) {
+     else if(message.includes('tell me a joke')) {
         const jokes = [
             `Why don't scientists trust atoms? Because they make up everything!`,
             `Why did the scarecrow win an award? Because he was outstanding in his field!`,
@@ -88,12 +86,12 @@ function speakThis(message) {
         const joke = jokes[Math.floor(Math.random() * jokes.length)];
         speak(joke);
     }
-         else if(message.includes('Ayushi')) {
+    else if(message.includes('Ayushi')) {
         const finalText = "dushman hai wo meri";
         speech.text = finalText;
     }
       
-        else if(message.includes('play') && message.includes('music')) {
+    else if(message.includes('play') && message.includes('music')) {
         window.open(`https://youtube.com/clip/Ugkxl_1mEjWsoM8CqMvmuEgDDt3BxhEjA_Gq?feature=shared`);
         const finalText = "Playing " + message.replace("play ", "") + " on YouTube.";
         speak(finalText);
@@ -108,7 +106,6 @@ function speakThis(message) {
         speak(finalText);
     }
     else if(message.includes('prime minister')) {
-        // window.open(`https://www.google.com/search?q=weather+in+${message.replace("weather in ", "")}`, "_blank");
         const finalText = "Our Prime Minister Is Mister Narendra Modi"
         speak(finalText);
     }
@@ -116,41 +113,37 @@ function speakThis(message) {
         const finalText = "My name is Devid";
         speech.text = finalText;
     }
-         else if(message.includes('Java')) {
+    else if(message.includes('Java')) {
         const finalText = "java was originally developed by James Gosling at sun microsystems";
         speech.text = finalText;
     }
-              else if(message.includes('Javascript')) {
+    else if(message.includes('Javascript')) {
         const finalText = "javascript was invented by Brendan Eich in 1995";
         speech.text = finalText;
     }
-        else if(message.includes('HTML')) {
+    else if(message.includes('HTML')) {
         const finalText = "HTML stands for HyperText Markup Language and is the language of the internet";
         speech.text = finalText;
     }
-         else if(message.includes('computer science')) {
+    else if(message.includes('computer science')) {
         const finalText = "Charles Babbage";
         speech.text = finalText;
     }   
        
-         else if(message.includes('Who developed the first electronic computer')) {
+    else if(message.includes('Who developed the first electronic computer')) {
         const finalText = "J.V. Atansoff";
         speech.text = finalText;
     }
       
-         else if(message.includes('What converts an entire program into machine language')) {
+    else if(message.includes('What converts an entire program into machine language')) {
         const finalText = "Compiler";
         speech.text = finalText;
     }
-
-
-
     else if(message.includes('open google')) {
         window.open("https://google.com", "_blank");
         const finalText = "Opening Google";
         speech.text = finalText;
     }
-
     else if(message.includes('open instagram')) {
         window.open("https://instagram.com", "_blank");
         const finalText = "Opening instagram";
@@ -199,4 +192,4 @@ function speakThis(message) {
 
     window.speechSynthesis.speak(speech);
 }
-console.log("updated test 2")
+console.log("updated test 3")
