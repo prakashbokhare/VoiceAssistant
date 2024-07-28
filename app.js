@@ -113,11 +113,11 @@ function speakThis(message) {
         const finalText = "My name is Devid";
         speech.text = finalText;
     }
-    else if(message.includes('Java')) {
+    else if(message.includes('Java') || message.includes('java')) {
         const finalText = "java was originally developed by James Gosling at sun microsystems";
         speech.text = finalText;
     }
-    else if(message.includes('Javascript')) {
+    else if(message.includes('JavaScript')||message.includes('javascript')) {
         const finalText = "javascript was invented by Brendan Eich in 1995";
         speech.text = finalText;
     }
