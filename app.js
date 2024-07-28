@@ -175,3 +175,4 @@ function speakThis(message) {
 
     window.speechSynthesis.speak(speech);
 }
+console.log("updated test 1")
