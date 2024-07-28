@@ -69,7 +69,7 @@ function speakThis(message) {
         const finalText = "I am fine boss tell me how can i help you";
         speech.text = finalText;
     } 
-       else if(message.includes('Motivation') || message.includes('Quote') || message.includes('motivation'))) {
+       else if(message.includes('Motivation') ||  message.includes('motivation')) {
         const quotes = [
             `The only way to do great work is to love what you do. - Steve Jobs`,
             `The best time to plant a tree was 20 years ago. The second best time is now. - Chinese Proverb`,
